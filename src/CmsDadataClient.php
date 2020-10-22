@@ -24,7 +24,7 @@ class CmsDadataClient extends DadataClient
         }
 
         if (\Yii::$app->dadataSettings->secret) {
-            $this->token = \Yii::$app->dadataSettings->secret;
+            $this->secret = \Yii::$app->dadataSettings->secret;
         }
     }
 }
