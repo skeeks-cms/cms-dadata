@@ -28,7 +28,7 @@ class CmsDadataSettings extends Component
      */
     static public function descriptorConfig() {
         return array_merge(parent::descriptorConfig(), [
-            'name'          => \Yii::t('skeeks/dadata-suggest', 'Service tips dadata.ru'),
+            'name'          => \Yii::t('skeeks/cms-dadata', 'Service tips dadata.ru'),
         ]);
     }
 
@@ -44,16 +44,16 @@ class CmsDadataSettings extends Component
     public function attributeLabels()
     {
         return ArrayHelper::merge(parent::attributeLabels(), [
-            'token' => \Yii::t('skeeks/dadata-suggest', 'Authorization token'),
-            'secret' => \Yii::t('skeeks/dadata-suggest', 'Authorization secret'),
+            'token' => \Yii::t('skeeks/cms-dadata', 'Authorization token'),
+            'secret' => \Yii::t('skeeks/cms-dadata', 'Authorization secret'),
         ]);
     }
 
     public function attributeHints()
     {
         return ArrayHelper::merge(parent::attributeHints(), [
-            'token' => \Yii::t('skeeks/dadata-suggest', 'https://dadata.ru/api/'),
-            'secret' => \Yii::t('skeeks/dadata-suggest', 'https://dadata.ru/api/'),
+            'token' => \Yii::t('skeeks/cms-dadata', 'https://dadata.ru/api/'),
+            'secret' => \Yii::t('skeeks/cms-dadata', 'https://dadata.ru/api/'),
         ]);
     }
 
